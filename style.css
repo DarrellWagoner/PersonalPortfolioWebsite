@@ -41,6 +41,11 @@ section
     font-weight: 500;
    
 }
+ span
+{
+    color: red;
+}
+
 .btn
 {
     position: relative;
@@ -81,6 +86,7 @@ header.sticky
     padding: 40px 100px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.1);
 }
+
 header .logo
 {
     color: #f7f7f7;
@@ -112,6 +118,11 @@ header ul li a
     margin: 0 15px;
     color: #f7f7f7;
     text-decoration: none;
+    transition: 0.5s
+}
+.Name 
+{
+    color: #333;
 }
 header.sticky ul li a
 {
@@ -123,6 +134,11 @@ color: #111;
     text-align: center;
     margin-bottom: 30px;
     color: #111;
+}
+header ul li a:hover
+{
+    color: red;
+    letter-spacing: 3px;
 }
 .heading h2
 {
@@ -238,8 +254,8 @@ color: #fff;
 .w50 span
 {
     color: red;
-    font-size: 40px;
-    font-weight: 300;
+    font-size: 24px;
+    font-weight: 400;
     line-height: 1em;
 }
 
