@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script src="https://iamharsh.design/saxxtext/lib/saxxtext.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -24,7 +26,7 @@
     </header>
     <section class="banner" id="home">
         <div class="textBx">
-            <h2>Hello, I'm<br><span class="Name">Darrell Wagoner</span></h2>
+            <h2>Hello, I'm<br><span class="Name">D<span></span>arrell Wagoner</span></h2>
             <h3>I'm a <span class="typing"></span></h3>
             <a href="#about" class="btn">About Me</a>
         </div>
@@ -46,62 +48,60 @@
         </div>
         </div>
     </div>
-    
+   
 </section>
 
 <section class="Competencies" id="Competencies">
     <div class="heading white">
         <h2><span>C</span>ompetencies</h2>
         <p>Hover over icons to see skills</p>
-    </div>
     <div class="container">
-        <div class="box">
-            <div class="imgBx">
+        <div class="card">
+            <h1>Photography</h1>
+            <h2>01</h2>
+            <div class="content">
+                
                 <img src="camera.png">
-            </div>
-            <div class="content">
-                <div class="icon">
-                    <img src="camera.png">
-                </div>
-                <h3>Photography/Photo Editing</h3>
-                <h4>Color Correction</h4>
-                <h4>CMYK and RGB Workflows</h4>
-                <h4>Metadata</h4>
-                <h4>Composition</h4>
-                <h4>Camera settings</h4>
+                <p>Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. </p>
+                   
             </div>
         </div>
-        <div class="box">
-            <div class="imgBx">
+        <div class="card">
+            <h1>Digital Retouching</h1>
+            <h2>02</h2>
+            <div class="content">
+                <img src="digitretouch.png">
+                <p>Adobe Photoshop, Lightroom, and Bridge; Capture One, Metadata, lighting, composition</p>
+                   
+            </div>
+        </div>
+        <div class="card">
+            <h1>Web Development</h1>
+            <h2>03</h2>
+            <div class="content">
                 <img src="webdev.png">
-            </div>
-            <div class="content">
-                <div class="icon">
-                    <img src="webdev.png">
-                </div>
-                <h3>Full Stack Web Development</h3>
-                <h4>HTML, CSS, JavaScript, JQuery</h4>
-                <h4>Express.js, React.js, Node.js</h4>
-                <h4>MongoDB, MySQL, Git</h4>
-                <h4>Python, Java, C#, AWS</h4>
+                <p> HTML, CSS, JavaScript, jQuery, MondgoDB, Bootstrap, PHP, GSAP, Scrolltrigger </p>
+                  
             </div>
         </div>
-        <div class="box">
-            <div class="imgBx">
+        <div class="card">
+            <h1>Graphic Design</h1>
+            <h2>04</h2>
+            <div class="content">
                 <img src="graphic.design.png">
-            </div>
-            <div class="content">
-                <div class="icon">
-                    <img src="graphic.design.png">
-                </div>
-                <h3>Graphic Design</h3>
-                <h4>Adobe Photoshop</h4>
-                <h4>Adobe Illustrator</h4>
-                <h4>Adobe InDesign</h4>
-            </div>
+                <p>Adobe Illustrator, InDesign, Vector Graphics, Typography</p>
+                   
             </div>
         </div>
-
+        <div class="card">
+            <h1>JQuery</h1>
+            <h2>05</h2>
+            <div class="content">
+                <img src="jquery.png">
+                <p>jQuery is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax.</p>
+                    
+            </div>
+        </div>
 </section>
 <section class="work" id="work">
     <div class="heading">
@@ -270,4 +270,19 @@ function toggleMenu(){
     loop: true
  });
 </script>
+   <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script> 
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+            max: 25,
+            speed: 400,
+            glare: true,
+            "max-glare": 1,
+        });
+</script>
+<script>
+setSaxxAnimation ( 'h3' , 'animated heartBeat' ) ;
+setSaxxMouseEffect ( 'h3' , 'animated heartBeat' ,'black','blue' ) ;
+</script>
+
+
 </body
