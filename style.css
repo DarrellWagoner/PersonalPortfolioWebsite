@@ -94,7 +94,27 @@ h1
     color: rgba(255,50,0,0.3);
     pointer-events: none;
 }
+ h4
+{
+    display: inline-flex;
+    
+}
+ h4 span:nth-child(even)
+{
+    overflow: hidden;
+    transition: ease-in-out 0.8s;    
+
+    color: #000;
+    letter-spacing: -1em;
+}
+h4:hover span:nth-child(even)
+{
+    letter-spacing: 0;
+}
+
+
 .container .card .content h3
+
 {
     font-size: 1.8em;
     color: #fff;
