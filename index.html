@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="splitting.css">
 </head>
 <body>
     <header>
@@ -30,7 +31,11 @@
             <h3>I'm a <span class="typing"></span></h3>
             <a href="#about" class="btn">About Me</a>
         </div>
+        <div class="circle" data-splitting>
+            CSS-HTML-JavaScript-PHP-React-
+        </div>
 </section>
+
 <section class="about" id="about">
     <div class="heading">
         <div>hover/tap letters</div>
@@ -39,7 +44,7 @@
     
     <div class="content">
         <div class="w50">
-            <img id="me" src="withcamera.jpg">
+            <img id="me" src="headsdown.png">
         </div>
         <div class="contentBx w50">
             <h2>
@@ -123,6 +128,7 @@
                 <img class="icon" src="twitter.png">          
             </div>
         </div>
+        
 </section>
 <section class="work" id="work">
     <div class="heading">
@@ -134,7 +140,7 @@
     </div>
     <div class="content">
         <div class="workBx">
-            <img src="bee_square.png">
+            <img src="MockUp2.png">
             <div class="photography">
             
         </div>
@@ -308,5 +314,13 @@ $(function () {
 	$('.tlt').textillate();
 })
 
+</script>
+<script src="splitting.js"></script>
+<script> Splitting();</script>    
+<script>
+    let circle = document.querySelector('.circle')
+    window.onmousemove = function(e){
+        let x = e.clientY/-2; circle.style.transform = "perspective(1000px) rotateY(" + x + "deg) rotateX(15deg)";
+    }
 </script>
 </body
